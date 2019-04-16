@@ -1,0 +1,25 @@
+<h1>Editar Pessoa</h1>
+
+<%= form_with model: @pessoa do |f| %>
+
+    <%= f.label :nome, 'Nome:' %>
+    <%= f.text_field :nome %> <br>
+    
+    <%= f.label :cep, 'CEP:' %>
+    <%= f.text_field :cep %> <br>
+    
+    <%= f.label :logradouro, 'Logradouro:' %>
+    <%= f.text_field :logradouro %> <br>
+    
+    <%= f.label :cep, 'Número:' %>
+    <%= f.text_field :numero %> <br>
+    
+    <%= f.label :cidade, 'Cidade:' %>
+    <%= f.text_field :cidade %> <br>
+    
+    <%= f.label :estado, 'Estado:' %>
+    <%= f.text_field :estado %> <br>
+    
+    <%= f.submit 'Salvar' %>
+
+<% end %>

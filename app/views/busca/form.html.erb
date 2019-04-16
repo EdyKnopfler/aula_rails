@@ -1,0 +1,10 @@
+<h1>Busca de CEP</h1>
+
+<%= form_with url: pesquisa_cep_path, method: :post, 
+              local: true do |f| %>
+
+    <%= f.label :cep, 'CEP:' %>
+    <%= f.text_field :cep %>
+    <%= f.submit 'Consultar' %>
+
+<% end %>
